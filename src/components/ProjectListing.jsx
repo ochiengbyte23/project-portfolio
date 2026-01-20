@@ -19,10 +19,12 @@ function ProjectListing({ projects }) {
 
             {filteredProjects.map((project) => (
                 <div key={project.id} className="project-item">
-                    <span style={{ display: "flex", flexDirection: "row" }} >✕</span>
                     <div className="project-content">
                         <h3>{project.title}</h3>
                         <p>{project.description}</p>
+                        <button className="delete-btn" onClick={() => onDeleteProject(project.id)}>
+                            Deletet
+                        </button>
                     </div>
                 </div>
             ))}
