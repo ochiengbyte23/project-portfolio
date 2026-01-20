@@ -22,12 +22,16 @@ function App() {
     setProjects([...projects, newProject]);
   };
 
+  const deleteProject = (id) => {
+    setProjects(projects.filter(project => project.id !== id));
+  };
+
   return (
     <div>
       <Header />
       <div className="app-container">
         <NewProject onAddProject={addProject} />
-        <ProjectListing projects={projects} />
+        <ProjectListing projects={projects} onDeleteProject={deleteProject} />
       </div>
 
     </div>
