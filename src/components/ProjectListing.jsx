@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-function ProjectListing({ projects }) {
+function ProjectListing({ projects, onDeleteProject }) {
     const [searchText, setSearchText] = useState("");
 
     const filteredProjects = projects.filter((project) => {
