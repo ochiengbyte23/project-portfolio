@@ -14,8 +14,12 @@ A simple and intuitive React application for managing and showcasing your person
 
 The app consists of two main sections:
 
-- **Add Project Form**: Input fields for title and description with an Add button
-- **Project Listing**: Searchable list of all projects with delete buttons (UI only)
+- **Add Project Form**:
+![alt text](image.png)
+Input fields for title and description with an Add button
+- **Project Listing**:
+![alt text](image-1.png)
+ Searchable list of all projects with delete buttons (UI only)
 
 ## Prerequisites
 
@@ -67,7 +71,7 @@ Before running this project, make sure you have the following installed:
 
 ## Project Structure
 
-```
+```bash
 personal-project-showcase-app/
 ├── src/
 │   ├── components/
@@ -117,15 +121,13 @@ personal-project-showcase-app/
 
 1. **No Persistence**: Projects are stored in memory only. Refreshing the page will reset the project list to the default three projects.
 
-2. **Delete Button Non-Functional**: The "✕" delete button is currently UI-only and doesn't remove projects from the list.
+2. **Single Input Type**: Description field uses a single-line text input instead of a textarea, limiting longer descriptions.
 
-3. **Single Input Type**: Description field uses a single-line text input instead of a textarea, limiting longer descriptions.
+3. **No Edit Functionality**: Once added, projects cannot be edited. They would need to be deleted and re-added.
 
-4. **No Edit Functionality**: Once added, projects cannot be edited. They would need to be deleted and re-added.
+4. **No Project Validation**: Beyond checking for empty fields, there's no validation for duplicate titles or description length.
 
-5. **No Project Validation**: Beyond checking for empty fields, there's no validation for duplicate titles or description length.
-
-6. **Search Limited to Title**: Search only filters by project title, not description content.
+5. **Search Limited to Title**: Search only filters by project title, not description content.
 
 ## Contributing
 
